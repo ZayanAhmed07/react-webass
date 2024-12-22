@@ -5,7 +5,7 @@ function WeatherApp() {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
 
-  const apiKey = "9c03ae49758801d954825157e5c354e8"; // Replace with your API Key
+  const apiKey = "560a1ca2e7ce51ab0f86fe9b46d1539e"; // Replace with your API Key
 
   const getWeather = async () => {
     try {
@@ -16,6 +16,7 @@ function WeatherApp() {
     } catch (error) {
       alert("City not found. Please enter a valid city name.");
     }
+    
   };
 
   return (

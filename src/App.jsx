@@ -6,6 +6,7 @@ import Expertise from "./components/Expertise";
 import ClientsAndTestimonials from "./components/ClientsAndTestimonials";
 import WeatherApp from "./components/WeatherApp";
 import Footer from "./components/Footer";
+import ItemManager from "./components/ItemManager";
 import "./style.css";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Services />
       <Expertise />
       <ClientsAndTestimonials />
+      <ItemManager/>
        
       <Footer />
     </>
