@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../images/logo.jpg"; // Ensure the path to the logo image is correct
+import logo from "../images/logo.jpg"; 
 
 const Header = () => {
   return (
