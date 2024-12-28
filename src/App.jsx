@@ -1,28 +1,17 @@
-import React from "react";
-import Header from "./components/Header";
-import MainBanner from "./components/MainBanner";
-import Services from "./components/Services";
-import Expertise from "./components/Expertise";
-import ClientsAndTestimonials from "./components/ClientsAndTestimonials";
-import WeatherApp from "./components/WeatherApp";
-import Footer from "./components/Footer";
-import ItemManager from "./components/ItemManager";
-import "./style.css";
-
-const App = () => {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Homepage from "./pages/homepage";
+import Weather from "./components/weatherapi";
+function app() {
   return (
-    <>
-      <Header />
-      <WeatherApp />
-      <MainBanner />
-      <Services />
-      <Expertise />
-      <ClientsAndTestimonials />
-      <ItemManager/>
-       
-      <Footer />
-    </>
-  );
-};
-
-export default App;
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/homepage" element={<Homepage />} />
+          <Route index element={<Homepage />} />
+          <Route path="/weather" element={<Weather />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  )
+}
+export default app;

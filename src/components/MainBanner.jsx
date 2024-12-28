@@ -1,4 +1,4 @@
-// MainBanner.js
+
 import React from "react";
 
 const MainBanner = () => {
